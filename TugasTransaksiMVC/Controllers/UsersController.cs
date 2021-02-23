@@ -74,8 +74,8 @@ namespace TugasTransaksiMVC.Controllers
 
         public ActionResult Details(int id)
         {
-            if (Session["Id"] != null) {
-                Employee employee = new Employee();
+            if (Session["Id"] != null)
+            {
                 var respondTask = client.GetAsync("Employees/Get/" + id);
                 respondTask.Wait();
                 var result = respondTask.Result;
@@ -83,7 +83,7 @@ namespace TugasTransaksiMVC.Controllers
                 {
                     var readTask = result.Content.ReadAsAsync<Employee>();
                     readTask.Wait();
-                    employee = readTask.Result;
+                    Employee employee = readTask.Result;
                     return View(employee);
                 }
                 else
@@ -125,7 +125,8 @@ namespace TugasTransaksiMVC.Controllers
             {
                 TempData["Success"] = "Check your email for your new temporary password";
                 return RedirectToAction("Login", "Users");
-            } else
+            } 
+            else
             {
                 ViewBag.Warning = "Email not found";
                 return View();

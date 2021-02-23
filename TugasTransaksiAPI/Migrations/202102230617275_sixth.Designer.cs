@@ -7,13 +7,13 @@ namespace TugasTransaksiAPI.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class fifth : IMigrationMetadata
+    public sealed partial class sixth : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(fifth));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(sixth));
         
         string IMigrationMetadata.Id
         {
-            get { return "202102230603211_fifth"; }
+            get { return "202102230617275_sixth"; }
         }
         
         string IMigrationMetadata.Source

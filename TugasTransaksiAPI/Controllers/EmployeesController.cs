@@ -12,7 +12,7 @@ namespace TugasTransaksiAPI.Controllers
 {
     public class EmployeesController : ApiController
     {
-        EmployeeRepository employeeRepository = new EmployeeRepository();
+        readonly EmployeeRepository employeeRepository = new EmployeeRepository();
         public IHttpActionResult Get()
         {
             var actionResult = employeeRepository.Get();

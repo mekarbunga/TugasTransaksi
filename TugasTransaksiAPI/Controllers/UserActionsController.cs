@@ -14,9 +14,9 @@ namespace TugasTransaksiAPI.Controllers
 {
     public class UserActionsController : ApiController
     {
-        EmployeeRepository employeeRepository = new EmployeeRepository();
-        AccountRepository accountRepository = new AccountRepository();
-        EmployeeAccountRepository employeeAccountRepository = new EmployeeAccountRepository();
+        readonly EmployeeRepository employeeRepository = new EmployeeRepository();
+        readonly AccountRepository accountRepository = new AccountRepository();
+        readonly EmployeeAccountRepository employeeAccountRepository = new EmployeeAccountRepository();
 
         public IHttpActionResult Login(VM_EmployeeAccount vM_EmployeeAccount)
         {
@@ -46,8 +46,11 @@ namespace TugasTransaksiAPI.Controllers
             {
                 Guid newPassword = Guid.NewGuid();
 
-                Account account = new Account();
-                account.AccountPassword = newPassword.ToString();
+                Account account = new Account
+                {
+                    AccountPassword = newPassword.ToString()
+                };
+
                 //var salt = BC.GenerateSalt();
                 //account.AccountPassword = BC.HashPassword(newPassword.ToString(), salt);
 

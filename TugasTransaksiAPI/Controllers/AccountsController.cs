@@ -11,7 +11,7 @@ namespace TugasTransaksiAPI.Controllers
 {
     public class AccountsController : ApiController
     {
-        AccountRepository accountRepository = new AccountRepository();
+        readonly AccountRepository accountRepository = new AccountRepository();
         public IHttpActionResult Put(Account account, int id)
         {
             int result = accountRepository.Put(account, id);

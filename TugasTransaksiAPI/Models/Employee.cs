@@ -20,7 +20,6 @@ namespace TugasTransaksiAPI.Models
         [Column(TypeName = "DateTime2")]
         public DateTime EmployeeBirthDate { get; set; }
         [DisplayName("Email")]
-        //[Index(IsUnique = true)]
         public string EmployeeEmail { get; set; }
         public virtual Account Account { get; set; }
     }

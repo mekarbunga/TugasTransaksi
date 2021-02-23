@@ -187,7 +187,6 @@
     <Compile Include="Controllers\EmployeesController.cs" />
     <Compile Include="Controllers\HomeAPIController.cs" />
     <Compile Include="Controllers\UserActionsController.cs" />
-    <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -207,9 +206,9 @@
     <Compile Include="Migrations\202102220823377_changecolumndate.designer.cs">
       <DependentUpon>202102220823377_changecolumndate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202102230603211_fifth.cs" />
-    <Compile Include="Migrations\202102230603211_fifth.designer.cs">
-      <DependentUpon>202102230603211_fifth.cs</DependentUpon>
+    <Compile Include="Migrations\202102230617275_sixth.cs" />
+    <Compile Include="Migrations\202102230617275_sixth.designer.cs">
+      <DependentUpon>202102230617275_sixth.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
@@ -322,8 +321,8 @@
     <EmbeddedResource Include="Migrations\202102220823377_changecolumndate.resx">
       <DependentUpon>202102220823377_changecolumndate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202102230603211_fifth.resx">
-      <DependentUpon>202102230603211_fifth.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202102230617275_sixth.resx">
+      <DependentUpon>202102230617275_sixth.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

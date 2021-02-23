@@ -13,8 +13,8 @@ namespace TugasTransaksiAPI.Repository
 {
     public class AccountRepository : IAccountRepository
     {
-        DynamicParameters parameters = new DynamicParameters();
-        SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["myConnection"].ConnectionString);
+        readonly DynamicParameters parameters = new DynamicParameters();
+        readonly SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["myConnection"].ConnectionString);
 
         public int Put(Account account, int id)
         {
